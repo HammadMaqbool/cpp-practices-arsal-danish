@@ -1,16 +1,17 @@
 #include<iostream>
 using namespace std;
-void Add(int* a);
+void PointerFun(int* a);
 int main()
 {
 	int myvalue = 10;
 	
-	Add(&myvalue);
+	PointerFun(&myvalue);
 	
 	cout<<myvalue;
 }
 
-void Add(int* a)
+void PointerFun(int* a)
 {
 	*a = 15;
+
 }
